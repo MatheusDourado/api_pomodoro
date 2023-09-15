@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pomodoros",
+      "handler": "pomodoro.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pomodoros/count",
+      "handler": "pomodoro.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pomodoros/:id",
+      "handler": "pomodoro.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pomodoros",
+      "handler": "pomodoro.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pomodoros/:id",
+      "handler": "pomodoro.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pomodoros/:id",
+      "handler": "pomodoro.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

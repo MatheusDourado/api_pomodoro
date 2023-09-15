@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tb_pomodoro",
+  "info": {
+    "name": "pomodoro",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tarefa": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": false
+    },
+    "ciclos_totais": {
+      "type": "integer",
+      "required": true
+    },
+    "ciclos_feitos": {
+      "type": "integer"
+    },
+    "timer": {
+      "type": "time"
+    }
+  }
+}
