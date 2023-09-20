@@ -1,4 +1,6 @@
-module.exports = ({ env }) => ({
+
+//Configuração Postgres Localhost
+/*module.exports = ({ env }) => ({
   defaultConnection: 'default',
   connections: {
     default: {
@@ -13,6 +15,22 @@ module.exports = ({ env }) => ({
         ssl: env.bool('DATABASE_SSL', false),
       },
       options: {}
+    },
+  },
+});*/
+
+//Configuração Mongo Atlas Nuvem50
+module.exports = ({ env }) => ({
+  defaultConnection: 'default',
+  connections: {
+    default: {
+      connector: 'mongoose',
+      settings: {
+        uri: env('DATABASE_URI')
+      },
+      options: {
+        ssl: true,
+      },
     },
   },
 });
